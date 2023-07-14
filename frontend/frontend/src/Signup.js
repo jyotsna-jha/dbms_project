@@ -21,7 +21,7 @@ const SignupForm = () => {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault(); 
     const validationErrors = validateForm();
     if (Object.keys(validationErrors).length === 0) {
       // Form is valid, proceed with signup logic
@@ -47,7 +47,7 @@ const SignupForm = () => {
   };
 
   const validateForm = () => {
-    let errors = {};
+    let errors = {}; // initializing empty error object
 
     if (name.trim() === '') {
       errors.name = 'Name is required';

@@ -21,6 +21,10 @@ app.post('/signup', (req, res) => {
       req.body.email,
       req.body.password,
     ];
+    // The code snippet sets up a route handler for a POST request to the /signup endpoint in
+    // the Express application. When a POST request is made, the code retrieves the name, email, 
+    //and password from the request body and uses them to insert a new record into the login table of a 
+    //MySQL database.
   
     db.query(sql, values, (err, data) => {
       if (err) {
